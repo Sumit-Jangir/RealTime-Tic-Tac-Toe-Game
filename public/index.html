@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <p class="game-info"></p>
+
+        <div class="tic-tac-toe ">
+            <div class="box box1 "></div>
+            <div class="box box2 "></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div class="box box9"></div>
+        </div>
+
+        <button class="btn">New Game</button>
+
+        <div class="full">
+            <div>GAME IS FULL</div>
+        </div>
+
+        <form action="" class="user-name">
+            <div>
+                <label>Enter your name</label>
+                <input type="text" autocomplete="off" id="name">
+                <button id="btn2" type="submit">Start</button>
+            </div>
+        </form>
+
+        <div class="wrong-turn">
+            <p>x</p>
+            <div> It's not your turn</div>
+        </div>
+
+        <!-- ------------background---------------- -->
+        <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path fill="#bc6b62" fill-opacity="0.3" d="M-100 -100L200 -100L200 60L-100 60Z" style="animation: path0 4s linear infinite alternate;" /><path fill="#77aacf" fill-opacity="0.5" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 4.9504950495049505s linear infinite alternate;" /><path fill="#feaff5" fill-opacity="0.5" d="M-100 -100L200 -100L200 30L-100 30Z" style="animation: path2 2.9761904761904763s linear infinite alternate;" /><path fill="#180c76" fill-opacity="0.2" d="M-100 -100L200 -100L200 70L-100 70Z" style="animation: path3 2.5906735751295336s linear infinite alternate;" />
+          </svg>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
